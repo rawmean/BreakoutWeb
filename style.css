@@ -2,7 +2,8 @@
     --bg-color: #0a0a0a;
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
-    --accent-color: #3b82f6; /* A nice blue, evocative of technology/iOS */
+    --accent-color: #3b82f6;
+    /* A nice blue, evocative of technology/iOS */
     --accent-hover: #2563eb;
     --card-bg: #171717;
     --nav-height: 70px;
@@ -38,7 +39,8 @@ body {
 header {
     background-color: rgba(10, 10, 10, 0.8);
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    -webkit-backdrop-filter: blur(20px);
+    /* Safari support */
     position: fixed;
     top: 0;
     width: 100%;
@@ -91,6 +93,7 @@ nav a:hover {
 .hero {
     height: 90vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -115,6 +118,14 @@ nav a:hover {
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto 40px;
+}
+
+.app-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .download-button {
